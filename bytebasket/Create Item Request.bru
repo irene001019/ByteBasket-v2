@@ -1,0 +1,19 @@
+meta {
+  name: Create Item Request
+  type: http
+  seq: 5
+}
+
+post {
+  url: http://127.0.0.1:3001/api/users/1/shopping-list
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "name": "Apples",
+    "quantity": 5,
+    "section": "Produce"
+  }
+}

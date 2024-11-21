@@ -1,0 +1,19 @@
+meta {
+  name: Update Item
+  type: http
+  seq: 7
+}
+
+put {
+  url: http://127.0.0.1:3001/api/users/1/shopping-list/1
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "name": "Mushrooms",
+    "quantity": 5,
+    "section": "Produce"
+  }
+}

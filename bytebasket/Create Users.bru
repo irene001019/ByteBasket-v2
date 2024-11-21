@@ -1,0 +1,21 @@
+meta {
+  name: Create Users
+  type: http
+  seq: 1
+}
+
+post {
+  url: http://127.0.0.1:3001/api/users
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "firstName": "Bruce",
+    "lastName": "Ni",
+    "email": "test@tesgt.com",
+    "password": "Hashing is cool like block chain?"
+  }
+  
+}

@@ -1,0 +1,22 @@
+{
+  "name": "backend",
+  "type": "module",
+  "scripts": {
+    "dev": "tsx watch src/index.ts"
+  },
+  "dependencies": {
+    "@hono/node-server": "^1.13.4",
+    "@hono/zod-validator": "^0.4.1",
+    "@libsql/client": "^0.14.0",
+    "backend": "file:",
+    "dotenv": "^16.4.5",
+    "drizzle-orm": "^0.36.3",
+    "hono": "^4.6.8",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.17",
+    "drizzle-kit": "^0.28.1",
+    "tsx": "^4.19.2"
+  }
+}

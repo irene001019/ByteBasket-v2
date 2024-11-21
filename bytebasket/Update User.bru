@@ -1,0 +1,21 @@
+meta {
+  name: Update User
+  type: http
+  seq: 3
+}
+
+put {
+  url: http://127.0.0.1:3001/api/users/1
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "firstName": "Ecurb",
+    "lastName": "Ni",
+    "email": "test@tesgt.com",
+    "password": "Hashing is cool like block chain?"
+  }
+  
+}
